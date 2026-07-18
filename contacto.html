@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto | ZYVERON TECHNOLOGIES</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(135deg,#eef4ff,#ffffff);
+
+color:#1e293b;
+
+overflow-x:hidden;
+
+}
+
+/*================ HEADER ================*/
+
+header{
+
+position:fixed;
+
+top:20px;
+
+left:5%;
+
+width:90%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 35px;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.6);
+
+border-radius:25px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:30px;
+
+font-weight:700;
+
+color:#0f172a;
+
+text-decoration:none;
+
+}
+
+.logo img{
+
+height:45px;
+
+}
+
+.menu{
+
+display:flex;
+
+gap:35px;
+
+align-items:center;
+
+}
+
+.menu a{
+
+text-decoration:none;
+
+font-weight:500;
+
+color:#334155;
+
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#2563eb;
+
+}
+
+.btn{
+
+padding:15px 32px;
+
+border:none;
+
+border-radius:50px;
+
+background:
+
+linear-gradient(135deg,#2563eb,#38bdf8);
+
+color:white;
+
+font-weight:600;
+
+cursor:pointer;
+
+text-decoration:none;
+
+transition:.35s;
+
+box-shadow:0 15px 35px rgba(37,99,235,.35);
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 45px rgba(37,99,235,.45);
+
+}
+
+/*================ HERO =================*/
+
+.hero{
+
+min-height:45vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding-top:120px;
+
+background:
+
+linear-gradient(rgba(255,255,255,.80),
+rgba(255,255,255,.85)),
+
+url("fondo-tech.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:68px;
+
+color:#0f172a;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:19px;
+
+color:#64748b;
+
+line-height:1.8;
+
+}
+
+/*================ CONTACTO ================*/
+
+.contact-section{
+
+padding:90px 8%;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.contact-box{
+
+width:100%;
+
+max-width:1200px;
+
+background:white;
+
+border-radius:30px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+overflow:hidden;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+}
+
+.form-area{
+
+padding:60px;
+
+}
+
+.form-area h2{
+
+font-size:40px;
+
+color:#0f172a;
+
+margin-bottom:10px;
+
+}
+
+.form-area p{
+
+color:#64748b;
+
+margin-bottom:40px;
+
+line-height:1.8;
+
+}
+
+.form-group{
+
+margin-bottom:22px;
+
+}
+
+.form-group label{
+
+display:block;
+
+font-weight:600;
+
+margin-bottom:8px;
+
+color:#334155;
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+width:100%;
+
+padding:18px;
+
+border-radius:14px;
+
+border:1px solid #dbe4ee;
+
+font-size:15px;
+
+transition:.3s;
+
+outline:none;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+border-color:#2563eb;
+
+box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+textarea{
+
+resize:none;
+
+min-height:170px;
+
+}
+
+.enviar{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+border-radius:15px;
+
+background:
+
+linear-gradient(135deg,#2563eb,#38bdf8);
+
+color:white;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+.enviar:hover{
+
+transform:translateY(-3px);
+
+}
+
+/*============== PANEL DERECHO ==============*/
+
+.info{
+
+background:
+
+linear-gradient(135deg,#0f172a,#1e40af);
+
+padding:60px 40px;
+
+color:white;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.info h2{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+}
+
+.info p{
+
+line-height:1.9;
+
+opacity:.9;
+
+margin-bottom:35px;
+
+}
+
+.card-contact{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+padding:18px;
+
+margin-bottom:18px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:18px;
+
+backdrop-filter:blur(15px);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.card-contact:hover{
+
+transform:translateX(8px);
+
+background:rgba(255,255,255,.15);
+
+}
+
+.card-contact i{
+
+font-size:28px;
+
+width:45px;
+
+text-align:center;
+
+}
+
+.card-contact h4{
+
+margin-bottom:5px;
+
+font-size:18px;
+
+}
+
+.card-contact span{
+
+font-size:14px;
+
+opacity:.85;
+
+}
+/*============== RESPONSIVE ==============*/
+
+@media(max-width:1000px){
+
+.contact-box{
+
+grid-template-columns:1fr;
+
+}
+
+.info{
+
+order:-1;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+top:10px;
+
+padding:15px 20px;
+
+}
+
+.menu{
+
+display:none;
+
+}
+
+.hero{
+
+padding:140px 25px 70px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.form-area{
+
+padding:35px;
+
+}
+
+.info{
+
+padding:35px;
+
+}
+
+}
+
+
+.success{
+
+display:none;
+
+margin-top:25px;
+
+padding:18px;
+
+border-radius:15px;
+
+background:#dcfce7;
+
+color:#166534;
+
+font-weight:600;
+
+text-align:center;
+
+}
+
+.success.show{
+
+display:block;
+
+animation:aparece .5s ease;
+
+}
+
+@keyframes aparece{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.whatsapp-float{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:32px;
+
+text-decoration:none;
+
+box-shadow:0 10px 30px rgba(37,211,102,.4);
+
+z-index:9999;
+
+transition:.3s;
+
+}
+
+
+.whatsapp-float:hover{
+
+transform:scale(1.15);
+
+}
+/* ================= VERSION CELULAR PROFESIONAL ================= */
+
+@media(max-width:900px){
+
+
+/* HEADER */
+
+header{
+
+    top:10px;
+    left:5%;
+    width:90%;
+    padding:15px 20px;
+    border-radius:20px;
+
+}
+
+
+.logo{
+
+    font-size:22px;
+
+}
+
+
+.logo img{
+
+    height:35px;
+
+}
+
+
+/* MENU */
+
+.menu-container{
+
+    gap:10px;
+
+}
+
+
+#btnMenu{
+
+    display:block;
+    padding:12px 20px;
+    font-size:14px;
+
+}
+
+
+nav{
+
+    position:absolute;
+    top:65px;
+    right:0;
+
+    width:220px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+nav a{
+
+    padding:12px 0;
+    text-align:center;
+
+}
+
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    padding:130px 25px 60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+
+.hero-content h1{
+
+    font-size:42px;
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+}
+
+
+.hero-content p{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+/* BOTON */
+
+.hero .btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+}
+
+
+
+/* IMAGEN TECNOLOGIA */
+
+.imagen-flotante{
+
+    position:relative;
+
+    right:auto;
+
+    top:auto;
+
+    width:250px;
+
+    height:250px;
+
+    margin:50px auto 0;
+
+}
+
+
+.imagen-flotante img{
+
+    border-radius:35px;
+
+}
+
+
+
+/* SECCIONES */
+
+section{
+
+    padding:70px 25px;
+
+}
+
+
+
+.section-title{
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* NOSOTROS */
+
+.about{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+
+.about h2{
+
+    font-size:32px;
+
+}
+
+
+.about p{
+
+    font-size:16px;
+
+}
+
+
+
+/* ESTADISTICAS */
+
+.stats{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+
+
+.stat{
+
+    padding:30px;
+
+}
+
+
+.stat h3{
+
+    font-size:38px;
+
+}
+
+
+
+/* FOOTER */
+
+
+
+.whatsapp-float{
+
+    width:55px;
+
+    height:55px;
+
+    right:20px;
+
+    bottom:20px;
+
+    font-size:28px;
+
+}
+
+
+}
+
+
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:40px 8% 20px;
+
+}
+
+
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1.5fr;
+
+gap:35px;
+
+}
+
+
+
+.footer-brand h2{
+
+font-size:24px;
+
+margin-bottom:12px;
+
+}
+
+
+
+.footer-brand p{
+
+color:#94a3b8;
+
+line-height:1.6;
+
+}
+
+
+
+.footer-column h3{
+
+color:#38bdf8;
+
+font-size:18px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.footer-column a{
+
+display:block;
+
+color:#cbd5e1;
+
+text-decoration:none;
+
+margin-bottom:10px;
+
+font-size:14px;
+
+}
+
+
+
+.footer-column a:hover{
+
+color:white;
+
+}
+
+
+
+.footer-column p{
+
+color:#cbd5e1;
+
+font-size:14px;
+
+margin-bottom:10px;
+
+}
+
+
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.15);
+
+margin-top:30px;
+
+padding-top:15px;
+
+text-align:center;
+
+color:#94a3b8;
+
+font-size:13px;
+
+}
+
+
+
+@media(max-width:800px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+
+<a href="index.html" class="logo">
+
+<img src="pp.jpeg" alt="Logo">
+
+ZYVERON
+
+</a>
+
+<nav class="menu">
+
+<a href="index.html#inicio">Inicio</a>
+
+<a href="servicios.html">Servicios</a>
+
+<a href="index.html#nosotros">Nosotros</a>
+
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+<a href="servicios.html" class="btn">
+
+Nuestros Servicios
+
+</a>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Contáctanos</h1>
+
+<p>
+
+¿Tienes un proyecto en mente?
+
+Completa el siguiente formulario y uno de nuestros especialistas
+
+se pondrá en contacto contigo en menos de 24 horas.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="contact-section">
+
+<div class="contact-box">
+
+<div class="form-area">
+
+<h2>Solicita una Cotización</h2>
+
+<p>
+
+Estamos listos para ayudarte a desarrollar la mejor solución tecnológica para tu empresa.
+
+</p>
+
+<form id="proyectoForm">
+
+<div class="form-group">
+
+<label>Nombre Completo</label>
+
+<input
+type="text"
+id="clienteNombre"
+placeholder="Escribe tu nombre completo"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Correo Electrónico</label>
+
+<input
+type="email"
+id="clienteCorreo"
+placeholder="correo@empresa.com"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Teléfono</label>
+
+<input
+type="tel"
+id="telefono"
+placeholder="+507 6000-0000">
+
+</div>
+
+<div class="form-group">
+
+<label>Empresa (Opcional)</label>
+
+<input
+type="text"
+id="empresa"
+placeholder="Nombre de la empresa">
+
+</div>
+
+<div class="form-group">
+
+<label>¿Cómo podemos ayudarte?</label>
+
+<textarea
+id="detallesProyecto"
+placeholder="Describe tu proyecto..."
+required></textarea>
+
+</div>
+
+<button
+type="submit"
+class="enviar"
+id="btnEnviarFormulario">
+
+Enviar Solicitud
+
+</button>
+
+<div
+class="success"
+id="mensajeExito">
+
+✅ ¡Gracias!
+
+Hemos recibido tu solicitud y nos pondremos en contacto contigo muy pronto.
+
+</div>
+
+</form>
+
+</div>
+
+<div class="info">
+
+<h2>Información de Contacto</h2>
+
+<p>
+
+Puedes escribirnos directamente por cualquiera de nuestros canales.
+
+Será un gusto atenderte.
+
+</p>
+
+<div class="card-contact">
+
+<i class="fas fa-envelope"></i>
+
+<div>
+
+<h4>Correo</h4>
+
+<span>technologieszyveron@gmail.com</span>
+
+</div>
+
+</div>
+
+<div class="card-contact">
+
+<i class="fab fa-whatsapp"></i>
+
+<div>
+
+<h4>WhatsApp</h4>
+
+<span>+507 64023307</span>
+
+</div>
+
+</div>
+
+<div class="card-contact">
+
+<i class="fab fa-linkedin"></i>
+
+<div>
+
+<h4>LinkedIn</h4>
+
+<span>ZYVERON TECHNOLOGIES</span>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<div class="footer-container">
+
+
+<div class="footer-brand">
+
+<h2>ZYVERON TECHNOLOGIES</h2>
+
+<p>
+Soluciones tecnológicas innovadoras para empresas.
+</p>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h3>Servicios</h3>
+
+<a href="servicios.html">Desarrollo Web</a>
+
+<a href="servicios.html">Aplicaciones</a>
+
+<a href="servicios.html">Ciberseguridad</a>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h3>Empresa</h3>
+
+<a href="index.html">Inicio</a>
+
+<a href="#nosotros">Nosotros</a>
+
+<a href="servicios.html">Servicios</a>
+
+<a href="contacto.html">Contacto</a>
+
+</div>
+
+
+
+<div class="footer-column">
+
+<h3>Contacto</h3>
+
+<p>📧 technologieszyveron@gmail.com</p>
+
+<p>📞 +507 64023307</p>
+
+<p>📍 Panamá</p>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+© 2026 ZYVERON TECHNOLOGIES | Todos los derechos reservados
+
+</div>
+
+</footer>
+<script>
+
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbw-JQbk_H6msEGaTOEhSQeFToeliWEDW2BnRrczlxOBHKYBuOGZYi0sGGdgxy-0pPts/exec";
+
+document.getElementById("proyectoForm").addEventListener("submit",async function(e){
+
+e.preventDefault();
+
+const btn=document.getElementById("btnEnviarFormulario");
+
+const texto=btn.innerHTML;
+
+btn.innerHTML="Enviando...";
+
+btn.disabled=true;
+
+const nombre=document.getElementById("clienteNombre").value;
+
+const correo=document.getElementById("clienteCorreo").value;
+
+const telefono=document.getElementById("telefono").value;
+
+const empresa=document.getElementById("empresa").value;
+
+const mensaje=document.getElementById("detallesProyecto").value;
+
+const fecha=new Date().toLocaleString("es-ES");
+
+const rowData=[
+fecha,
+nombre,
+correo,
+telefono,
+empresa,
+mensaje
+];
+
+const payload={
+action:"add",
+row:rowData
+};
+
+const formData=new FormData();
+
+formData.append(
+"payload",
+JSON.stringify(payload)
+);
+
+try{
+
+await fetch(
+APPS_SCRIPT_URL,
+{
+method:"POST",
+body:formData,
+mode:"no-cors"
+}
+);
+
+document.getElementById("mensajeExito").classList.add("show");
+
+document.getElementById("proyectoForm").reset();
+
+setTimeout(()=>{
+
+document.getElementById("mensajeExito").classList.remove("show");
+
+},5000);
+
+}catch(error){
+
+alert("Ocurrió un error al enviar la solicitud.");
+
+}
+
+btn.innerHTML=texto;
+
+btn.disabled=false;
+
+});
+
+document.querySelectorAll(".card-contact")[0].onclick=function(){
+
+window.location.href="mailto:contacto@zyveron.com";
+
+};
+
+document.querySelectorAll(".card-contact")[1].onclick=function(){
+
+window.open("https://wa.me/507XXXXXXXX","_blank");
+
+};
+
+document.querySelectorAll(".card-contact")[2].onclick=function(){
+
+window.open("https://www.linkedin.com","_blank");
+
+};
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>40){
+
+header.style.background="rgba(255,255,255,.80)";
+
+header.style.backdropFilter="blur(25px)";
+
+}else{
+
+header.style.background="rgba(255,255,255,.45)";
+
+}
+
+});
+
+</script>
+
+<a href="https://wa.me/50764023307" 
+class="whatsapp-float" 
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</body>
+
+</html>
